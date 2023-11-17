@@ -1,0 +1,12 @@
+.login{
+    color: rgb(255, 255, 255);
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+.contianer{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+
+}

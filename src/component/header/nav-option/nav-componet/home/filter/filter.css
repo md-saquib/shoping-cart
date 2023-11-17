@@ -1,0 +1,18 @@
+.filter-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    background-color: rgb(127, 126, 126);
+}
+
+.filter-body>div>input,label,button{
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.filter-body>div>span{
+    padding: 0.1rem 0.2rem;
+    cursor: pointer;
+
+}

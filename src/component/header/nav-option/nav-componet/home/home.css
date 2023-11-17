@@ -1,0 +1,15 @@
+.gap{
+    margin: 1rem 0rem;
+}
+.main-container{
+   
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.card-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}

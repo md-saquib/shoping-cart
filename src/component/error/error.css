@@ -1,0 +1,23 @@
+/* Error.css */
+
+.error-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8d7da; /* Red background color for error messages, you can change it */
+  }
+  
+  .error-message {
+    padding: 20px;
+    border: 2px solid #721c24; /* Red border for the error message, you can change it */
+    border-radius: 4px;
+    background-color: #fff; /* White background for the error message, you can change it */
+    color: #721c24; /* Red text color for the error message, you can change it */
+    text-align: center;
+    font-size: 18px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional box shadow for a subtle effect */
+  }
+  

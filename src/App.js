@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+// import SimplePage from './component/SimplePage';
+import { Provider } from 'react-redux';
+import { store } from './redux/store/Store';
+// import LoginPage from './component/loginPage/LoginPage';
+import Header from './component/header/Header';
+import { Routes,Route } from 'react-router-dom';
+import {Home} from './component/header/nav-option/nav-componet/home/Home';
+import About from './component/header/nav-option/nav-componet/about/About';
+import Profile from './component/header/nav-option/nav-componet/profile/Profile';
+import Detail from './component/header/nav-option/nav-componet/detial/Detail';
+import Contact from './component/header/nav-option/nav-componet/contact/Contact';
+import CartPage from './component/header/cart/cartpage/CartPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+     
+      <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/About' element={<About/>}/>
+        <Route path='/Profile' element={<Profile/>}/>
+        <Route path='/Detail' element={<Detail/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/cartpage' element={<CartPage/>}/>
+      </Routes>
+    </Provider>
   );
 }
 
