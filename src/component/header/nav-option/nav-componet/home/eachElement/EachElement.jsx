@@ -37,7 +37,7 @@ const EachElement = ({ prod }) => {
       </div>
           {data.some((el)=> el.userId === prod.userId) ? 
           (<button className='btn btn-danger' onClick={()=> removeData(prod.userId)}>Remove-From-Cart</button>) :
-          (<button className='btn btn-success' onClick={()=> addData(prod)}>Add-To-Cart</button>)}
+          (<button disabled={prod.instock === 0} className='btn btn-success' onClick={()=> addData(prod)}>Add-To-Cart</button>)}
     </>
   )
 }

@@ -4,6 +4,8 @@
 .main-container{
    
     width: 100%;
+    position: relative;
+    top: 8rem;
     /* display: flex; */
     /* justify-content: center; */
 }

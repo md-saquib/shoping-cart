@@ -1,18 +1,65 @@
-.filter-body{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem 2rem;
-    background-color: rgb(127, 126, 126);
+@media (min-width:796px) {
+
+    .filter-body {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 2rem;
+        background-color: rgb(127, 126, 126);
+        position: fixed;
+        top: 4rem;
+    }
+
+    .filter-body>div>input,
+    label,
+    button {
+        padding: 0.5rem;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .filter-body>div>span {
+        padding: 0.1rem 0.2rem;
+        cursor: pointer;
+
+    }
+    .filter-togler-button{
+        /* display: none; */
+    }
 }
 
-.filter-body>div>input,label,button{
-    padding: 0.5rem;
-    cursor: pointer;
-    font-weight: bold;
-}
-.filter-body>div>span{
-    padding: 0.1rem 0.2rem;
-    cursor: pointer;
+@media(max-width:796px) {
+
+    .filter-togler-body{
+        background-color: rgb(188, 184, 184);
+        position: absolute;
+        top: -1.49rem;
+        display: flex;
+        width: 100%;
+    }
+    .filter-togler-button{
+
+    }
+    
+    .filter-body {
+        width: 100%;
+        padding: 1rem 2rem;
+        background-color: rgb(127, 126, 126);
+        
+    }
+
+    .filter-body>div>input,
+    label,
+    button {
+        padding: 0.5rem;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .filter-body>div>span {
+        padding: 0.1rem 0.2rem;
+        cursor: pointer;
+
+    }
 
 }

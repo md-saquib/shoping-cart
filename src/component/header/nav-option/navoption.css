@@ -1,0 +1,13 @@
+
+@media ( max-width:796px){
+    .nav-option{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 4rem;
+        background-color: rgb(75, 68, 68);
+        width: 100%;
+        padding: 0.5rem 0rem;
+        
+    }
+}

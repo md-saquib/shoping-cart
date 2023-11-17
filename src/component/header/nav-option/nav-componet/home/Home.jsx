@@ -9,7 +9,7 @@ import { dataprovider } from '../../../../../provider/Provider'
 export const Home = () => {
   const data = useSelector((state) => state.data.data);
 
-  const { filter } = useContext(dataprovider)
+  const { filter ,filterButton } = useContext(dataprovider)
 
   const FilterData = (filter) => {
 
@@ -37,7 +37,7 @@ export const Home = () => {
 
     <>
       <div className="  main-container">
-        <Filter />
+        { filterButton && <Filter />}
         <div className="row-cols-4 row card-container">
           {FilterData(filter).map((el) => {
             return (

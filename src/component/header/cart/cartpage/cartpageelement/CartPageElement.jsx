@@ -13,11 +13,11 @@ const CartPageElement = ({ prod }) => {
             <div>
                 <img src={prod.image} className='image' alt="" />
             </div>
-            <div className="name">{prod.name.length > 15 ? prod.name.slice(0, 15) : prod.name}</div>
+            <div className="name">{prod.name.length > 9 ? prod.name.slice(0, 9) : prod.name}</div>
 
-            <div className="price">$ &nbsp;{prod.price}</div>
+            <div className="price">${prod.price}</div>
 
-            <div>
+            <div className='star'>
                 {[...Array(5)].map((el, i) => <span key={i}>{prod.rating > i ? <FaStar /> : <CiStar />}</span>)}
             </div>
             <div>

@@ -15,21 +15,22 @@ const Cart = () => {
 
   return (
     <>
-      <Dropdown alignright='true'>
+      <Dropdown alignright='true' className='dropdown'>
 
 
         <Dropdown.Toggle variant="success" id="dropdown-split-basic" >
           <BsFillCartFill color='white' fontSize='25px' />
           <Badge className='bg-success'>{cartCount.length}</Badge>
-        </Dropdown.Toggle>
+       
 
         {cartCount.length > 0 &&
-          <Dropdown.Menu style={{ minWidth: 310 }}>
+          <Dropdown.Menu style={{ minWidth: 310 }} >
             {cartCount.map((el) => {
               return <div key={el.userId} className='cartelement-container' style={{ padding: '0.5rem 1rem' }}><CartElement prod={el} /></div>
             })}
           <button onClick={()=> navigate('/cartPage')} className='btn btn-primary  go-to-cart-button'>Go To Cart</button>
           </Dropdown.Menu>}
+          </Dropdown.Toggle>
       </Dropdown>
 
     </>
